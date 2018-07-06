@@ -26,13 +26,13 @@ class Index extends controller
     		echo 'msg = 403';
     	}
 
-        $group = db('group')->where('user_id',1)->select();
+  //       $group = db('group')->where('user_id',1)->select();
 
 
-        // return $this->fetch();
-		// return json_encode($data);
-		dump($group);
-		// var_dump($name);
+  //       // return $this->fetch();
+		// // return json_encode($data);
+		// dump($group);
+		var_dump($data);
 		
 		
 		
