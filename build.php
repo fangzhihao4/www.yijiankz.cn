@@ -17,11 +17,19 @@ return [
     'admin'     => [
         '__file__'   => ['common.php'],
         '__dir__'    => ['behavior', 'controller', 'model', 'logic', 'validate', 'view'],
-        'controller' => ['Index', 'Test', 'UserType'],
-        'logic'      => ['Index'],
+        'controller' => ['Base','Index', 'Test', 'UserType', 'Login'],
+        'logic'      => ['Index','Login','Order'],
         'validate'   => ['Index'],
-        'model'      => ['User', 'Admin','Car'],
+        'model'      => ['User', 'Admin','Car','Order'],
         'view'       => ['index/index'],
+    ],
+    // 定义common模块的自动生成 
+    'common'     => [
+        '__file__'   => ['common.php'],
+        '__dir__'    => ['behavior', 'controller', 'model','validate'],
+        'controller' => ['Base', 'Test', 'Admin'],
+        'validate'   => ['Index'],
+        'model'      => ['User', 'Admin','Car','Goods'],
     ],
     // 其他更多的模块定义
 ];
